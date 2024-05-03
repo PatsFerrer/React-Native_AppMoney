@@ -8,7 +8,7 @@ export const styles = {
     padding: 20
   },
   logo: {
-    // marginTop: 10,
+    marginTop: 10,
     width: 100,
     height: 30,
   },
