@@ -5,8 +5,6 @@ export const styles = {
     flex: 1,
     backgroundColor: COLORS.white,
     padding: 20,
-    marginTop: 20,
-    marginTop: 40,
   },
   containerField: {
     marginBottom: 40

@@ -5,13 +5,13 @@ import icons from "../../constants/icons.js"
 import { styles } from "./home.style.js";
 import Despesa from './../../components/despesa/despesa.jsx';
 
-const Home = () => {
+const Home = (props) => {
 
   const [total, setTotal] = useState(0);
   const [despesas, setDespesas] = useState([]);
 
   const OpenDespesa = (id) => {
-    console.log('cadastrar despesa');
+    props.navigation.navigate('despesa')
   }
 
   const listarDespesas = () => {
@@ -70,6 +70,7 @@ const Home = () => {
                   categoria={despesa.categoria}
                   descricao={despesa.descricao}
                   valor={despesa.valor}
+                  onClick={OpenDespesa}
                 />
               )
             })

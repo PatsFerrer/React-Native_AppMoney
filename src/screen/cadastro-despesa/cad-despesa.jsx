@@ -5,7 +5,7 @@ import { Picker } from '@react-native-picker/picker';
 import icons from '../../constants/icons'
 import { styles } from './cad-despesa.style'
 
-const CadDespesa = () => {
+const CadDespesa = (props) => {
 
   const [id, setId] = useState(0);
   const [valor, setValor] = useState(0);
@@ -13,11 +13,15 @@ const CadDespesa = () => {
   const [categoria, setCategoria] = useState('');
 
   const handleSalvar = () => {
+    //salvar despesa na API...
 
+    props.navigation.navigate('home');
   }
 
   const handleExcluir = () => {
+    //excluir despesa na API...
 
+    props.navigation.navigate('home');
   }
 
   return (
