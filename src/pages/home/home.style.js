@@ -40,6 +40,14 @@ export const styles = {
     color: COLORS.dark_gray,
     marginTop: 15,
     fontWeight: 'bold',
+  },
+  btnAdd: { 
+    position: 'absolute',
+    bottom: 12,
+  },
+  btnAddImage: {
+    width: 50,
+    height: 50,
   }
 
 }
