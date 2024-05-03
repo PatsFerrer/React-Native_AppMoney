@@ -1,8 +1,9 @@
 import { Image, Text, View } from "react-native"
 import icons from "../../constants/icons.js"
 import { styles } from "./home.style.js";
+import Despesa from './../../components/despesa/despesa.jsx';
 
-export const Home = () => {
+const Home = () => {
   return (
     <View style={styles.container}>
       <Image style={styles.logo} source={icons.logo} />
@@ -17,8 +18,11 @@ export const Home = () => {
 
       <View>
         <Text style={styles.despesaTitulo}>Despesas</Text>
+        <Despesa />
       </View>
 
     </View>
   )
 }
+
+export default Home;
